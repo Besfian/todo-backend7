@@ -23,6 +23,7 @@ public class DbService {
 
     //    @Step("Обновление аттрибутов эпизодов в таблице (UPDATE tvh_product.episode SET attrs)")
     public void updateEpisodesAttrs(String email, String id) {
+        System.out.println("ok");
         String sql = "UPDATE user_data SET email="+"'"+email+"'"+"WHERE id="+"'"+id+"'";
 //        Object[] params = {attrs, extId};
         dataBaseConfig.jdbcTemplate().update(sql);

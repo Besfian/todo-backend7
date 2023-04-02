@@ -18,6 +18,7 @@ public class DataBaseConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(dataBasePropert.driver);
+//        dataSource.setUrl(env.getProperty(dataBasePropert.driver));
         dataSource.setUrl(env.getProperty(dataBasePropert.url));
         dataSource.setUsername(env.getProperty(dataBasePropert.username));
         dataSource.setPassword(env.getProperty(dataBasePropert.password));
